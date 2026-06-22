@@ -2,48 +2,112 @@
 <html>
 <head>
 <title>Your Agency Name</title>
+
 <style>
 body{
-font-family:Arial,sans-serif;
-max-width:900px;
-margin:auto;
-padding:40px;
-line-height:1.6;
+    font-family:Arial,sans-serif;
+    margin:0;
+    color:#333;
+    line-height:1.6;
 }
 
-h1{
-color:#222;
+.hero{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:20px;
 }
 
 .button{
-display:inline-block;
-background:black;
-color:white;
-padding:12px 24px;
-text-decoration:none;
-border-radius:6px;
+    display:inline-block;
+    background:#b08d57;
+    color:white;
+    padding:12px 24px;
+    text-decoration:none;
+    border-radius:6px;
+    margin-top:20px;
+}
+
+.section{
+    max-width:1000px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#f5f5f5;
+    padding:20px;
+    border-radius:10px;
 }
 </style>
+
 </head>
+
 <body>
 
-<h1>Your Agency Name</h1>
+<div class="hero">
+    <h1>Your Agency Name</h1>
+    <p>Development, Training & Representation for Young Performers</p>
+
+    <a href="contact.html" class="button">Contact Us</a>
+</div>
+
+<div class="section">
+
+<h2>About Us</h2>
 
 <p>
-Development, Training and Representation for Young Performers.
+We support aspiring performers through professional training,
+industry guidance and representation opportunities across theatre,
+television and commercial work.
 </p>
 
-<h2>What We Do</h2>
+</div>
 
-<ul>
-<li>Headshots</li>
-<li>Voice Reels</li>
-<li>Dance Reels</li>
-<li>Training</li>
-<li>Representation</li>
-</ul>
+<div class="section">
 
-<a href="contact.html" class="button">Contact Us</a>
+<h2>Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Headshots</h3>
+<p>Professional headshot sessions to help performers stand out.</p>
+</div>
+
+<div class="card">
+<h3>Voice Reels</h3>
+<p>Industry-standard recordings for auditions and casting.</p>
+</div>
+
+<div class="card">
+<h3>Dance Reels</h3>
+<p>Professional dance footage showcasing performer skills.</p>
+</div>
+
+<div class="card">
+<h3>Representation</h3>
+<p>Professional agency representation and career guidance.</p>
+</div>
+
+</div>
+
+</div>
 
 </body>
 </html>
