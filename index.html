@@ -155,9 +155,14 @@ footer a { color: white; }
 
 @media (max-width: 768px) {
     .representation-layout {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        padding: 50px 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 35px;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 65px;
+    align-items: center;
+}
     }
 
     .representation-about {
