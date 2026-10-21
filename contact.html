@@ -1,21 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Contact</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Arts Nexus Talent</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    color: white;
+    background: #111 url("background.png") center / cover fixed no-repeat;
+    line-height: 1.7;
+}
+
+nav {
+    background: rgba(0,0,0,0.9);
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 14px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #cccccc;
+}
+
+.contact-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px 25px;
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.contact-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: rgba(0,0,0,0.9);
+    padding: 35px 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding: 15px 8px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px 8px;
+        font-size: 13px;
+    }
+
+    .contact-section {
+        padding: 65px 20px;
+    }
+}
+</style>
 </head>
+
 <body>
 
-<h1>Contact Us</h1>
-
-<p>Email: talent@artsnexus.co.uk</p>
-
-<p>Instagram: @artsnexustalent</p>
-
-  <nav>
+<nav>
     <a href="index.html">Representation</a>
     <a href="nexus.html">The Nexus Sessions</a>
     <a href="contact.html">Contact Us</a>
 </nav>
+
+<main class="contact-section">
+
+    <h1>Contact Us</h1>
+
+    <p>
+        For representation enquiries, casting opportunities
+        or general information, please get in touch.
+    </p>
+
+    <p>
+        <strong>Email</strong>
+        <br>
+        <a href="mailto:talent@artsnexus.co.uk">
+            talent@artsnexus.co.uk
+        </a>
+    </p>
+
+    <p>
+        <strong>Instagram</strong>
+        <br>
+        <a href="https://www.instagram.com/artsnexustalent/"
+           target="_blank"
+           rel="noopener noreferrer">
+            @artsnexustalent
+        </a>
+    </p>
+
+</main>
+
+<footer>
+    <p>Arts Nexus Talent | Independent Talent Agency</p>
+    <p>&copy; 2026 Arts Nexus Talent</p>
+</footer>
 
 </body>
 </html>
