@@ -55,15 +55,21 @@ nav a:hover { color: #c9a776; }
 
 .button {
     display: inline-block;
-    background: #b08d57;
-    color: white;
+    background: white;
+    color: black;
     padding: 12px 24px;
     text-decoration: none;
-    border-radius: 5px;
-    margin: 12px 6px;
+    border: 1px solid white;
+    border-radius: 6px;
+    margin: 15px 8px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-.button:hover { background: #caa66b; }
+.button:hover {
+    background: transparent;
+    color: white;
+}
 
 .section {
     max-width: 900px;
