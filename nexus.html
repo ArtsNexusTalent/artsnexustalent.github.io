@@ -6,7 +6,9 @@
 <title>The Nexus Sessions | Arts Nexus Talent</title>
 
 <style>
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
@@ -20,6 +22,9 @@ nav {
     background: rgba(0,0,0,0.9);
     padding: 20px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav a {
@@ -30,48 +35,96 @@ nav a {
     font-weight: bold;
 }
 
-nav a:hover { color: #c9a776; }
+nav a:hover {
+    color: #cccccc;
+}
 
-section {
+.nexus-content {
     max-width: 850px;
-    margin: auto;
-    padding: 75px 25px;
+    margin: 0 auto;
+    padding: 65px 25px 30px;
     text-align: center;
 }
 
-h1 { font-size: 42px; }
-h2 { color: #c9a776; font-size: 29px; }
-p { font-size: 17px; }
+.nexus-logo {
+    display: block;
+    width: 85%;
+    max-width: 340px;
+    height: auto;
+    margin: 0 auto 30px;
+}
+
+.nexus-content p {
+    font-size: 17px;
+    line-height: 1.9;
+    margin-bottom: 22px;
+}
+
+.mailing-list {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 15px 25px 75px;
+    text-align: center;
+}
+
+.mailing-list h2 {
+    color: white;
+    font-size: 29px;
+    margin-bottom: 20px;
+}
+
+.mailing-list p {
+    font-size: 17px;
+    line-height: 1.9;
+}
 
 .button {
     display: inline-block;
-    background: #b08d57;
-    color: white;
+    background: white;
+    color: black;
     padding: 12px 25px;
+    border: 1px solid white;
     border-radius: 5px;
     text-decoration: none;
     margin-top: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: transparent;
+    color: white;
 }
 
 footer {
     background: rgba(0,0,0,0.9);
     text-align: center;
     padding: 30px 20px;
+    font-size: 14px;
 }
 
-footer a { color: #c9a776; }
+footer a {
+    color: white;
+}
 
 @media (max-width: 600px) {
-    nav a { display: inline-block; margin: 6px 8px; }
-    h1 { font-size: 32px; }
-    section { padding: 55px 20px; }
-}
-    .nexus-logo {
-    display: block;
-    width: 85%;
-    max-width: 340px;
-    height: auto;
-    margin: 0 auto 25px;
+    nav {
+        padding: 15px 8px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px 8px;
+        font-size: 13px;
+    }
+
+    .nexus-content {
+        padding: 45px 20px 20px;
+    }
+
+    .mailing-list {
+        padding: 10px 20px 55px;
+    }
 }
 </style>
 </head>
@@ -84,64 +137,68 @@ footer a { color: #c9a776; }
     <a href="contact.html">Contact Us</a>
 </nav>
 
-<section>
-    <img src="nexus-logo.png"
-         alt="The Nexus Sessions"
-         class="nexus-logo">
+<main>
 
-    <p><strong>Connecting Young Performers With Industry Professionals</strong></p>
+    <section class="nexus-content">
 
-    <p>
-        The Nexus Sessions is a monthly programme
-        delivered by Arts Nexus Talent, offering young
-        performers opportunities to learn from experienced
-        casting and industry professionals.
-    </p>
-</section>
+        <img src="nexus-logo.png"
+             alt="The Nexus Sessions"
+             class="nexus-logo">
 
-<section class="section">
-    <h2>About The Nexus Sessions</h2>
+        <p>
+            The Nexus Sessions is a programme of monthly
+            casting and industry workshops based in
+            Staffordshire, delivered by Arts Nexus Talent
+            to support young performers in developing their
+            skills, building confidence and gaining valuable
+            industry insight.
+        </p>
 
-    <p>
-        The Nexus Sessions is a programme based in Staffordshire of monthly casting
-        and industry workshops designed to support young
-        performers in developing their skills, building
-        confidence and gaining valuable industry insight.
-    </p>
+        <p>
+            Led by resident coaches and guest industry
+            professionals, our sessions provide opportunities
+            to explore different areas of performance,
+            develop audition techniques and connect with
+            professionals working across the entertainment
+            industry.
+        </p>
 
-    <p>
-        Led by resident coaches and guest industry professionals,
-        our sessions provide opportunities to explore different
-        areas of performance, develop audition techniques
-        and connect with professionals working across
-        the entertainment industry.
-    </p>
-</section>
-<section class="section">
-    <h2>Join Our Mailing List</h2>
+    </section>
 
-    <p>
-        To hear about additional spaces available at our
-        monthly workshops, simply email us with
-        "The Nexus Sessions" in the subject line
-        to join our mailing list.
-    </p>
+    <section class="mailing-list">
 
-    <a href="mailto:talent@artsnexus.co.uk?subject=The%20Nexus%20Sessions"
-       class="button">
-        Email Us
-    </a>
-</section>
+        <h2>Join Our Mailing List</h2>
+
+        <p>
+            To hear about additional spaces available at our
+            monthly workshops, simply email us with
+            "The Nexus Sessions" in the subject line
+            to join our mailing list.
+        </p>
+
+        <a href="mailto:talent@artsnexus.co.uk?subject=The%20Nexus%20Sessions"
+           class="button">
+            Email Us
+        </a>
+
+    </section>
+
+</main>
 
 <footer>
     <p>Arts Nexus Talent | The Nexus Sessions</p>
+
     <p>
         <a href="mailto:talent@artsnexus.co.uk">
             talent@artsnexus.co.uk
         </a>
     </p>
+
     <p>&copy; 2026 Arts Nexus Talent</p>
 </footer>
+
+</body>
+</html>
 
 </body>
 </html>
