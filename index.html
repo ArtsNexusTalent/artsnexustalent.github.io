@@ -1,181 +1,215 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Arts Nexus Talent</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arts Nexus Talent | Talent Agency</title>
 
 <style>
-body{
-    font-family:Arial,sans-serif;
-    margin:0;
-    color:white;
-   background-image:url("background.png");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-    line-height:1.6;
-}
-   nav{
-    background:rgba(0,0,0,0.85);
-    backdrop-filter:blur(8px);
-    padding:20px;
-    text-align:center;
-    position:sticky;
-    top:0;
-    z-index:1000;
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: white;
+    background: #111 url("background.png") center / cover fixed no-repeat;
+    line-height: 1.7;
 }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 20px;
-    font-weight:bold;
+nav {
+    background: rgba(0,0,0,0.9);
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.hero{
-    background:transparent;
-    color:white;
-    text-align:center;
-    padding:60px 20px;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 14px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
-.hero h1{
-    font-size:48px;
-    margin-bottom:10px;
+nav a:hover { color: #c9a776; }
+
+.hero {
+    text-align: center;
+    padding: 85px 20px 100px;
 }
 
-.hero p{
-    font-size:20px;
+.hero img {
+    max-width: 300px;
+    width: 80%;
 }
 
-.button{
-    display:inline-block;
-    background:#b08d57;
-    color:white;
-    padding:12px 24px;
-    text-decoration:none;
-    border-radius:6px;
-    margin:20px 10px 0 10px;
-}
-.button:hover{
-    background:#caa66b;
-    transform:translateY(-2px);
-    transition:0.3s;
-}
-.section{
-    max-width:900px;
-    margin:auto;
-    padding:120px 30px 80px 30px;
-    text-align:center;
+.hero p {
+    font-size: 19px;
+    max-width: 700px;
+    margin: 25px auto;
 }
 
-.section h2{
-    color:#b08d57;
-    font-size:36px;
-    margin-bottom:30px;
+.button {
+    display: inline-block;
+    background: #b08d57;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 12px 6px;
 }
 
-.section p{
-    font-size:18px;
-    line-height:1.8;
+.button:hover { background: #caa66b; }
+
+.section {
+    max-width: 900px;
+    margin: auto;
+    padding: 85px 25px;
+    text-align: center;
 }
 
-.services{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:20px;
+.section h2 {
+    color: #c9a776;
+    font-size: 32px;
+    margin-bottom: 25px;
 }
 
-.card{
-    background:rgba(0,0,0,0.65);
-    border:1px solid rgba(176,141,87,0.4);
-    padding:30px;
-    border-radius:12px;
-    color:white;
+.section p {
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+footer {
+    background: rgba(0,0,0,0.9);
+    padding: 35px 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a { color: #c9a776; }
+
+@media (max-width: 600px) {
+    nav { padding: 15px 8px; }
+    nav a {
+        display: inline-block;
+        margin: 6px 8px;
+        font-size: 13px;
+    }
+    .hero { padding: 55px 20px; }
+    .section { padding: 60px 20px; }
+    .section h2 { font-size: 27px; }
 }
 </style>
-
 </head>
 
 <body>
-    
+
 <nav>
-    <a href="#">Home</a>
+    <a href="index.html">Home</a>
     <a href="#about">About</a>
-    <a href="#representation">Representation</a>
+    <a href="representation.html">Representation</a>
+    <a href="nexus.html">The Nexus Sessions</a>
     <a href="contact.html">Contact</a>
 </nav>
+
 <div class="hero">
+    <img src="logo.png" alt="Arts Nexus Talent logo">
 
-    <img src="logo.png" alt="Arts Nexus Talent" style="max-width:300px; width:80%;">
+    <p>
+        Professional talent representation across theatre,
+        television, film, commercials and live performance.
+    </p>
 
-<p>
-Professional representation for emerging performers aged 8–18 across theatre, television, film, commercials and live performance.
-</p>
+    <p><strong>Representation · Opportunity · Industry Connections</strong></p>
 
-<p>
-<strong>Representation · Development · Industry Access</strong>
-</p>
-
-<a href="representation.html" class="button">Our Representation</a>
-
-<a href="contact.html" class="button">Contact Arts Nexus</a>
-<a href="https://forms.cloud.microsoft/e/GbaYJ4Q3bB" class="button" target="_blank" rel="noopener">Apply to Join</a>
+    <a href="representation.html" class="button">Our Representation</a>
+    <a href="https://forms.cloud.microsoft/e/GbaYJ4Q3bB"
+       class="button" target="_blank" rel="noopener noreferrer">
+       Apply for Representation
+    </a>
 </div>
 
-<div class="section" id="about">
+<section class="section" id="about">
+    <h2>About Arts Nexus Talent</h2>
 
-<h2>About Arts Nexus Talent</h2>
+    <p>
+        Arts Nexus Talent is an independent UK talent agency
+        representing emerging and established performers
+        across stage and screen.
+    </p>
 
-<p>
-Arts Nexus Talent is dedicated to developing, training and representing exceptional young performers across theatre, television, film and commercial work.
-</p>
+    <p>
+        We represent a diverse range of performers, including
+        children and young people, and are committed to
+        connecting talented individuals with suitable
+        professional opportunities.
+    </p>
 
-<p>
-Through industry-focused training, development opportunities and professional representation, we support performers in building confidence, experience and successful careers within the performing arts industry.
-</p>
+    <p>
+        We pride ourselves on building positive working
+        relationships with performers, families, casting
+        professionals and production teams, offering
+        dedicated representation and professional guidance.
+    </p>
+</section>
 
-<p>
-Our mission is to nurture talent, create opportunities and provide professional guidance for performers and their families every step of the way.
-</p>
+<section class="section">
+    <h2>What We Do</h2>
 
-</div>
-<div class="section" id="representation">
+    <p>
+        Arts Nexus Talent sources and facilitates casting
+        opportunities across theatre, musical theatre,
+        television, film, commercials, dance, voice-over
+        and live performance.
+    </p>
 
-<h2>Representation</h2>
+    <p>
+        We work to identify appropriate opportunities,
+        submit suitable performers for consideration,
+        communicate with casting and production teams,
+        and support clients throughout the casting
+        and booking process.
+    </p>
 
-<p>
-Arts Nexus Talent provides professional representation for emerging performers across theatre, television, film and commercial work.
-</p>
+    <a href="representation.html" class="button">
+        Learn More About Representation
+    </a>
+</section>
 
-<p>
-We work closely with performers and their families to identify suitable opportunities, support career development and help young talent navigate the industry with confidence.
-</p>
+<section class="section">
+    <h2>The Nexus Sessions</h2>
 
-</div>
-<div class="section" id="services">
-<h2>Development & Training</h2>
+    <p>
+        Alongside our agency work, we run The Nexus Sessions,
+        a programme of monthly casting and industry workshops
+        designed to help young performers develop their skills,
+        build confidence and gain valuable industry insight.
+    </p>
 
-<div class="services">
+    <a href="nexus.html" class="button">
+        Discover The Nexus Sessions
+    </a>
+</section>
 
-<div class="card">
-<h3>Development</h3>
-<p>Tailored development opportunities designed to support performers at every stage of their journey.</p>
-</div>
-
-<div class="card">
-<h3>Training</h3>
-<p>Industry-focused workshops, masterclasses and performance opportunities to build skills and confidence.</p>
-</div>
-
-<div class="card">
-<h3>Representation</h3>
-<p>Professional representation for suitable performers seeking opportunities across stage and screen.</p>
-</div>
-
-</div>
-
-</div>
+<footer>
+    <p>Arts Nexus Talent | Independent Talent Agency</p>
+    <p>
+        <a href="mailto:talent@artsnexus.co.uk">
+            talent@artsnexus.co.uk
+        </a>
+    </p>
+    <p>
+        <a href="https://www.instagram.com/artsnexustalent/"
+           target="_blank" rel="noopener noreferrer">
+            Instagram: @artsnexustalent
+        </a>
+    </p>
+    <p>&copy; 2026 Arts Nexus Talent</p>
+</footer>
 
 </body>
 </html>
