@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Nexus Sessions | Arts Nexus Talent</title>
 
 <style>
+
+/* GENERAL STYLING */
+
 * {
     box-sizing: border-box;
 }
@@ -17,6 +21,8 @@ body {
     background: #111 url("background.png") center / cover fixed no-repeat;
     line-height: 1.8;
 }
+
+/* NAVIGATION */
 
 nav {
     background: rgba(0,0,0,0.9);
@@ -39,12 +45,16 @@ nav a:hover {
     color: #cccccc;
 }
 
+/* NEXUS SESSIONS INTRODUCTION */
+
 .nexus-content {
     max-width: 850px;
     margin: 0 auto;
-    padding: 65px 25px 30px;
+    padding: 20px 25px 15px;
     text-align: center;
 }
+
+/* NEXUS SESSIONS LOGO */
 
 .nexus-logo {
     display: block;
@@ -54,30 +64,36 @@ nav a:hover {
     margin: 0 auto 5px;
 }
 
-.nexus-content {
-    max-width: 850px;
-    margin: 0 auto;
-    padding: 20px 25px 15px;
-    text-align: center;
+/* INTRODUCTION TEXT */
+
+.nexus-content p {
+    font-size: 17px;
+    line-height: 1.9;
+    margin: 0 0 22px;
 }
+
+/* MAILING LIST */
 
 .mailing-list {
     max-width: 850px;
     margin: 0 auto;
-    padding: 15px 25px 75px;
+    padding: 15px 25px 55px;
     text-align: center;
 }
 
 .mailing-list h2 {
     color: white;
     font-size: 29px;
-    margin-bottom: 20px;
+    margin: 0 0 20px;
 }
 
 .mailing-list p {
     font-size: 17px;
     line-height: 1.9;
+    margin: 0 0 15px;
 }
+
+/* BUTTONS */
 
 .button {
     display: inline-block;
@@ -97,6 +113,8 @@ nav a:hover {
     color: white;
 }
 
+/* FOOTER */
+
 footer {
     background: rgba(0,0,0,0.9);
     text-align: center;
@@ -108,7 +126,10 @@ footer a {
     color: white;
 }
 
+/* MOBILE STYLING */
+
 @media (max-width: 600px) {
+
     nav {
         padding: 15px 8px;
     }
@@ -120,17 +141,29 @@ footer a {
     }
 
     .nexus-content {
-        padding: 45px 20px 20px;
+        padding: 15px 20px 10px;
+    }
+
+    .nexus-logo {
+        width: 100%;
+        margin-bottom: 5px;
     }
 
     .mailing-list {
-        padding: 10px 20px 55px;
+        padding: 10px 20px 45px;
+    }
+
+    .mailing-list h2 {
+        font-size: 26px;
     }
 }
+
 </style>
 </head>
 
 <body>
+
+<!-- NAVIGATION -->
 
 <nav>
     <a href="index.html">Representation</a>
@@ -139,6 +172,8 @@ footer a {
 </nav>
 
 <main>
+
+    <!-- NEXUS SESSIONS LOGO AND INTRODUCTION -->
 
     <section class="nexus-content">
 
@@ -166,6 +201,8 @@ footer a {
 
     </section>
 
+    <!-- MAILING LIST -->
+
     <section class="mailing-list">
 
         <h2>Join Our Mailing List</h2>
@@ -186,7 +223,10 @@ footer a {
 
 </main>
 
+<!-- FOOTER -->
+
 <footer>
+
     <p>Arts Nexus Talent | The Nexus Sessions</p>
 
     <p>
@@ -196,6 +236,7 @@ footer a {
     </p>
 
     <p>&copy; 2026 Arts Nexus Talent</p>
+
 </footer>
 
 </body>
